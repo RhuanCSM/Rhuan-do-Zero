@@ -1,12 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Blog posts</h1>
+<h1 class="p-5 bg-gray-50">Blog posts</h1>
 
 <div id="blog_posts">
   <% @blog_posts.each do |blog_post| %>
     <%= render blog_post %>
-  <hr>
+  <hr class="my-5 m-0">
   <% end %>
 </div>
 
-<%= link_to "Create post", new_blog_post_path %>
+<div class="p-10 bg-gray-50">
+  <%= link_to "New post", new_blog_post_path %>
+</div>
