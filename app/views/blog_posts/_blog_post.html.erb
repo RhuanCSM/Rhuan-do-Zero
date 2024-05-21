@@ -1,12 +1,10 @@
 <div id="<%= dom_id blog_post %>">
   <p>
-    <strong>Title:</strong>
     <%= link_to blog_post.title, blog_post %>
   </p>
 
   <p>
-    <strong>Body:</strong>
-    <%= blog_post.body %>
+    <%= raw blog_post.body.html_safe %>
   </p>
 
 </div>
