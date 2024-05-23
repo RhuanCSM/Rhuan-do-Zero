@@ -1,13 +1,15 @@
-<div id="<%= dom_id blog_post %>">
-  <h2>
-    <%= link_to blog_post.title, blog_post %>
-  </h2>
+<tr id="<%= dom_id blog_post %>">
+  <td class="bg-gray-50">
+    <h3><%= link_to blog_post.title, blog_post %></h3>
+  </td>
 
-  <p>
+  <td>
     <%= blog_post.body.html_safe %>
-  </p>
-
-  <p>
-    <%= blog_post.created_at.strftime("%d/%m/%Y, às %H:%M:%S") %>
-  </p>
+  </td>
+  <td>
+    <%= link_to "Edit", edit_blog_post_path(blog_post) %> 
+    <%= button_to "Delete", blog_post_path(blog_post), method: :delete, data: { confirm: "Are you sure?" } %>
+  </td>
+</tr> 
 </div>
+

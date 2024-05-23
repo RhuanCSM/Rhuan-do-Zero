@@ -4,6 +4,6 @@
 
 <br>
 
-<div>
-  <%= link_to "Back to home", blog_posts_path %>
-</div>
+  <%= link_to blog_posts_path do %>
+    <h3 class="p-4 bg-gray-50">Back to home</h3>
+  <% end %>

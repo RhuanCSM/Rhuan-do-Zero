@@ -22,7 +22,7 @@ gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
-
+gem 'rails-i18n', '~> 7.0.0' # para Rails 6
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 gem 'actiontext', '~> 7.1', '>= 7.1.3.3'
